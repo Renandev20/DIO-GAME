@@ -1,2 +1,2 @@
 #Jogo dio Bootcamp 2023. 
-Renandev20/DIO-GAME
+https://renandev20.github.io/DIO-GAME/
