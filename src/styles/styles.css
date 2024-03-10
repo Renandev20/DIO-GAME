@@ -1,0 +1,91 @@
+/** Reset */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+/** footer template */
+footer {
+	align-items: center;
+	align-self: flex-end;
+	display: flex;
+	font-family: Helvetica, sans-serif;
+	font-size: 16px;
+	justify-content: center;
+	min-height: 6rem;
+	border-top: 5px solid #ffd700;
+}
+footer a {
+	color: #aad;
+	text-decoration: none;
+}
+/* body */
+body {
+	align-items: center;
+	flex-direction: column;
+	font-family: "Press Start 2P", sans-serif;
+}
+/* header */
+header {
+	align-items: center;
+	align-self: flex-start;
+	display: flex;
+	gap: 4rem;
+	justify-content: center;
+	margin: 0 auto;
+	min-height: 6rem;
+	border-bottom: 5px solid #ffd700;
+}
+header h2 {
+	color: #f53434;
+	font-size: medium;
+}
+header span {
+	color: #fdfdfd;
+}
+header,
+footer {
+	background-color: #333;
+	color: #fdfdfd;
+	padding: 1rem;
+}
+/* main */
+main {
+	display: flex;
+	flex-direction: column;
+	min-height: calc(100vh - 12rem);
+	align-items: center;
+	justify-content: center;
+	padding: 2rem;
+	background-image: url("../img/wall.png");
+}
+.row {
+	display: flex;
+}
+
+.square {
+	height: 150px;
+	border: 1px solid #333;
+	width: 150px;
+	background-color: #f53434;
+}
+
+.enemy {
+	background-image: url(../img/ralph.png);
+	background-size: cover;
+	background-color: #470303;
+}
+
+@media (max-width: 576px) {
+	.square {
+		height: 90px;
+		width: 90px;
+	}
+	header {
+		flex-direction: column;
+		gap: 0;
+	}
+	header h2 {
+		padding: 1rem;
+	}
+}
